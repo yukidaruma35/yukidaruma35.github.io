@@ -1,108 +1,185 @@
-body {
-  font-family: "Avenir Next";
+/* 全体 */
+* {
+  margin: 0;
 }
 
-li {
-  list-style: none;
+a {
+  text-decoration: none;
 }
 
-.header-list li {
-  float: left;
-	padding: 33px 20px;
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.header {
-  background-color: #f7f2b4;
-  height: 90px;
+/* header */
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
-.main {
-  padding: 100px 80px;
+.logo {
+  color: white;
+  line-height: 65px;
 }
 
-.footer {
-  background-color: #2f5167;
-  height: 120px;
-  padding: 40px;
-  color: #fff;
-}
-
-.header-logo {
-	float: left;
-  font-size: 36px;
-	padding: 20px 40px;
-}
-
-.header-list {
+.header-left {
   float: left;
 }
 
-.copy-container h1 {
-  font-size: 140px;
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
 }
 
-.copy-container h2 {
-  font-size: 60px;
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.copy-container span {
-  color: #ff4a4a;
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
 }
 
-.contents-item img {
-  width: 130px;
-}
-
-.section-title {
-  border-bottom: 2px double black;
-  font-size: 28px;
-  padding-bottom: 15px;
-  margin-bottom: 50px;
-}
-
-.contents {
-  height: 500px;
-  margin-top: 100px;
-}
-
-.contents-item {
-  float: left;
-  margin-right: 40px
-}
-
-.contents-item p {
-  font-size: 24px;
-  margin-top: 30px;
+/* top-wrapper */
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(../img/IMG_0498.JPG);
+  background-size: cover;
+  color: black;
   text-align: center;
 }
 
-.contact-form {
-  padding-top: 100px;
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
 }
 
-input,textarea {
-  width: 400px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding: 20px;
-  font-size: 18px;
-  border: 1px solid #dee7ec;
+.top-wrapper p {
+  opacity: 0.7;
 }
 
-.contact-submit {
-  background-color: #dee7ec;
-  color: #889eab;
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
 }
 
-.footer-logo {
-  font-size: 32px;
+.btn:hover {
+  opacity: 1;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+/* member-wrapper */
+.member-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding: 60px 0 30px 0;
+  color: #2b1138;
+}
+
+.member {
   float: left;
+  width: 25%;
 }
 
-.footer-list {
-  float: right;
+img {
+  width: 250px;
 }
 
-.footer-list li {
-  padding-bottom: 20px;
+.member-icon {
+  position: relative;
+}
+
+.member-icon p {
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  color: red;
+  font-weight: bold;
+	border: 1px double black;
+	margin: 2px;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #b3aeb5;
+}
+
+/* message-wrapper */
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  margin-bottom: 30px;
+  background-color: #5dca88;
+  box-shadow: 0px 7px #1a7940;
+}
+
+.message:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+/* footer */
+footer {
+  padding-top: 30px;
+  padding-bottom: 60px
+}
+
+footer h1 {
+  font-size: 25px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
 }

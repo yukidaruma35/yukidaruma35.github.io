@@ -1,64 +1,86 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>Portforio</title>
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<div class="header">
-			<div class="header-logo">雪だるま</div>
-			<div class="header-list">
-				<ul>
-					<li>第一形態</li>
-					<li>第二形態</li>
-					<li>第三形態</li>
-				</ul>
+<head>
+	<meta charset="UTF-8">
+	<title>myportfirio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-left">
+				<h1 class="logo">雪だるま</h1>
+			</div>
+			<div class="header-right">
+				<a href="#" class="logo">ログイン</a>
 			</div>
 		</div>
-		<div class="main">
-			<div class="copy-container">
-				<h1>STEP BY STEP<span>!</span></h1>
-				<h2>どんなことも一歩ずつ！</h2>
-			</div>
-			<div class="contents">
-				<h3 class="section-title">メンバー紹介</h3>
-				<div class="contents-item">
-					<img src="img/panda.png">
-					<p>パンダ教授</p>
-				</div>
-				<div class="contents-item">
-					<img src="img/yashinoki.png">
-					<p>ヤシの木さん</p>
-				</div>
-				<div class="contents-item">
-					<img src="img/yukidaruma.png">
-					<p>雪だるま(本人）</p>
-				</div>
-				<div class="contents-item">
-					<img src="img/teruterubozu.png">
-					<p>テルテル先生</p>
-				</div>
-			</div>
-			<div class="contact-form">
-				<h3 class="section-title">お問い合わせ</h3>
-				<p>メールアドレス(必須)</p>
-				<input>
-				<p>お問い合わせ内容(必須)</p>
-				<textarea></textarea>
-				<p>※必須項目は必ずご入力ください。</p>
-				<input class="contact-submit" type="submit" value="送信">
+	</header>
+	<div class="top-wrapper">
+		<div class="container">
+			<h1>STEP BY STEP!</h1>
+			<h1>YOU CAN DO IT IF YOU TRY!</h1>
+			<p>どんなことも一歩ずつ！</p>
+			<p>やればできる！</p>
+			<div class="btn-wrapper">
+				<a href="#" class="btn signup">新規登録はこちら</a>
+				<p>or sign up with</p>
+				<a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
+				<a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
 			</div>
 		</div>
-		<div class="footer">
-			<div class="footer-logo">雪だるま</div>
-			<div class="footer-list">
-				<ul>
-					<li>最終形態1</li>
-					<li>最終形態2</li>
-					<li>最終形態3</li>
-				</ul>
+	</div>
+	<div class="member-wrapper">
+		<div class="container">
+			<div class="heading">
+				<h2>メンバー紹介</h2>
+			</div>
+			<div class="members">
+				<div class="member">
+					<div class="member-icon">
+						<img src="/img/yukidaruma.png">
+						<p>雪だるま</p>
+					</div>
+					<p class="txt-contents">役職：リーダー<br>好きなものはアイスキャンデー。暑さは大の苦手。子育て真っ最中のパパです。</p>
+				</div>
+				<div class="member">
+					<div class="member-icon">
+						<img src="/img/panda.png">
+						<p>パンダさん</p>
+					</div>
+					<p class="txt-contents">役職：サブリーダー<br>雪だるまの良き相談相手。見た通り、日頃の性格はのほほんとしているが、お金にはシビア。</p>
+				</div>
+				<div class="member">
+					<div class="member-icon">
+						<img src="/img/teruterubozu.png">
+						<p>てるてるさん</p>
+					</div>
+					<p class="txt-contents">役職：なし<br>趣味は占い。特にお天気占いは大の得意。だが、雨の日はテンションが低い。</p>
+				</div>
+				<div class="member">
+					<div class="member-icon">
+						<img src="/img/yashinoki.png">
+						<p>やしのき君</p>
+					</div>
+					<p class="txt-contents">役職：なし（見習い）<br>。誰とも会話をしない。だが、温かい雰囲気があるので落ち着く。</p>
+				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+	<din class="message-wrapper">
+		<div class="container">
+			<div class="heading">
+				<h2>さぁ、あなたも雪だるまの仲間になりませんか。</h2>
+			</div>
+			<a href="#" class="btn message">さっそく仲間になる</a>
+		</div>
+	</din>
+	<footer>
+		<div class="container">
+			<h1>YUKIDARUMA</h1>
+			<p>一緒にわいわいがやがやしましょう！</p>
+		</div>
+	</footer>
+</body>
 </html>

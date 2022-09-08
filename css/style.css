@@ -128,8 +128,13 @@ header {
   color: #2b1138;
 }
 
+.members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .member {
-  float: left;
+  flex: auto;
   width: 25%;
   padding-right: 60px;
 }

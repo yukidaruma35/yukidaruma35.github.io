@@ -1,5 +1,9 @@
 /* タブレット向けレイアウト */
 @media(max-width: 1000px) {
+  .members {
+    flex-wrap: wrap;
+  }
+  
   .member {
     width: 50%;
     margin-bottom: 50px;
@@ -17,8 +21,12 @@
 
 /* スマホ向けレイアウト */
 @media(max-width: 670px) {
+  .members {
+    flex-direction: column;
+  }
+  
   .member {
-    width: 100%;
+    margin: 0 auto;
   }
 
   footer {
@@ -29,12 +37,16 @@
     width: 100%;
   }
 
+  .btn-wrapper {
+    text-align: center;
+  }
+
   .facebook {
     margin-bottom: 10px; 
   }
 
   .top-wrapper {
-    text-align-last: left;
+    text-align: left;
     padding-top: 130px;
   }
 

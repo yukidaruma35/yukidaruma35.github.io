@@ -1,6 +1,7 @@
 /* 全体 */
 * {
   margin: 0;
+  box-sizing: border-box
 }
 
 a {
@@ -8,7 +9,8 @@ a {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -34,12 +36,7 @@ header {
 
 .header-right {
   float: right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
-}
-
-.header-right:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  margin-right: -25px;
 }
 
 .header-right a {
@@ -47,6 +44,20 @@ header {
   padding: 0 25px;
   color: white;
   display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
 }
 
 /* top-wrapper */
@@ -107,7 +118,6 @@ header {
 
 /* member-wrapper */
 .member-wrapper {
-  height: 500px;
   padding-bottom: 80px;
   background-color: #f7f7f7;
   text-align: center;
@@ -121,6 +131,11 @@ header {
 .member {
   float: left;
   width: 25%;
+  padding-right: 60px;
+}
+
+.clear {
+  clear: left;
 }
 
 img {

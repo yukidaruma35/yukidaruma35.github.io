@@ -116,6 +116,66 @@ header {
   margin-right: 5px;
 }
 
+/* モーダル */
+.login-modal-wrapper, .signup-modal-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 34%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form, #login-form {
+  width: 100%
+}
+
+#signup-form h2, #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input, #login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
 /* member-wrapper */
 .member-wrapper {
   padding-bottom: 80px;
@@ -124,19 +184,14 @@ header {
 }
 
 .heading {
-  padding: 60px 0 30px 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
   color: #2b1138;
 }
 
 .members {
   display: flex;
   flex-wrap: wrap;
-}
-
-.member {
-  flex: auto;
-  width: 25%;
-  padding-right: 60px;
 }
 
 .clear {
@@ -147,46 +202,93 @@ img {
   width: 250px;
 }
 
+.member {
+  flex: auto;
+  width: 25%;
+}
+
 .member-icon {
   position: relative;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .member-icon p {
   position: absolute;
+  text-align: center;
   top: 250px;
   width: 100%;
   color: red;
-  font-weight: bold;
-	border: 1px double black;
-	margin: 2px;
 }
 
 .txt-contents {
+  margin: 3% auto;
   width: 80%;
-  display: inline-block;
-  margin-top: 30px;
-  font-size: 12px;
+  display: none;
   color: #b3aeb5;
 }
 
-/* message-wrapper */
+.txt-active {
+  display: block;
+}
+
+/* faq-wrapper */
+.faq-wrapper {
+  background-color: #e6ecf0;
+  text-align: center;
+  padding-bottom: 80px;
+  color: #5f5d60;
+}
+
+#faq-list {
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-list-item {
+  margin: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-list-item h3 {
+  font-size: 14px;
+}
+
+.faq-list-item span {
+  position: absolute;
+  top:0;
+  right: 5px;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.answer {
+  font-size: 12px;
+  padding: 5px 0;
+  margin-bottom: 15px;
+  display: none;
+}
+
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
 }
 
-.message {
-  padding: 15px 40px;
-  margin-bottom: 30px;
-  background-color: #5dca88;
-  box-shadow: 0px 7px #1a7940;
+.message-wrapper .heading h3 {
+  font-weight: normal;
 }
 
-.message:active {
-  box-shadow: none;
-  position: relative;
-  top: 7px;
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0px 7px #1a7940;
 }
 
 /* footer */

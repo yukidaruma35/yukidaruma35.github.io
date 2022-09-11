@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/resposive.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
 	<header>
@@ -18,17 +19,49 @@
 			<div class="header-right">
 				<a href="#">プレイ</a>
 				<a href="#">新規登録</a>
-				<a href="#" class="login">ログイン</a>
+				<a href="#" class="login" id="login-show">ログイン</a>
 			</div>
 			<span class="fa fa-bars menu-icon"></span>
 		</div>
 	</header>
+	<div class="signup-modal-wrapper" id="signup-modal">
+		<div class="modal">
+			<div class="close-modal">
+				<i class="fa fa-2x fa-times"></i>
+			</div>
+
+			<div id="signup-form">
+				<h2>Emailで新規登録</h2>
+				<form action="#">
+					<input class="form-control" type="text" placeholder="メールアドレス">
+					<input class="form-control" type="password" placeholder="パスワード">
+					<div id="submit-btn">新規登録</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="login-modal-wrapper" id="login-modal">
+		<div class="modal">
+			<div class="close-modal">
+				<i class="fa fa-2x fa-times"></i>
+			</div>
+
+			<div id="login-form">
+				<h2>Emailログイン</h2>
+				<form action="#">
+					<input class="form-control" type="text" placehokder="メールアドレス">
+					<input class="form-control" type="password" placehokder="パスワード">
+					<div id="submit-btn">ログイン</div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<div class="top-wrapper">
 		<div class="container">
 			<h1>STEP BY STEP!<br>YOU CAN DO IT IF YOU TRY!</h1>
 			<p>どんなことも一歩ずつ<br>やればできる！</p>
 			<div class="btn-wrapper">
-				<a href="#" class="btn signup">新規登録はこちら</a>
+				<a href="#" class="btn signup signup-show">新規登録はこちら</a>
 				<p>or sign up with</p>
 				<a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
 				<a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
@@ -41,28 +74,28 @@
 				<h2>メンバー紹介</h2>
 			</div>
 			<div class="members">
-				<div class="member">
+				<div class="member member-hover">
 					<div class="member-icon">
 						<img src="/img/yukidaruma.png">
 						<p>雪だるま</p>
 					</div>
 					<p class="txt-contents">役職：リーダー<br>好きなものはアイスキャンデー。暑さは大の苦手。子育て真っ最中のパパです。</p>
 				</div>
-				<div class="member">
+				<div class="member member-hover">
 					<div class="member-icon">
 						<img src="/img/panda.png">
 						<p>パンダさん</p>
 					</div>
 					<p class="txt-contents">役職：サブリーダー<br>雪だるまの良き相談相手。見た通り、日頃の性格はのほほんとしているが、お金にはシビア。</p>
 				</div>
-				<div class="member">
+				<div class="member member-hover">
 					<div class="member-icon">
 						<img src="/img/teruterubozu.png">
 						<p>てるてるさん</p>
 					</div>
 					<p class="txt-contents">役職：なし<br>趣味は占い。特にお天気占いは大の得意。だが、雨の日はテンションが低い。</p>
 				</div>
-				<div class="member">
+				<div class="member member-hover">
 					<div class="member-icon">
 						<img src="/img/yashinoki.png">
 						<p>やしのき君</p>
@@ -73,12 +106,44 @@
 			</div>
 		</div>
 	</div>
+	<div class="faq-wrapper">
+		<div class="container">
+			<div class="heading">
+				<h2>FAQ</h2>
+			</div>
+			<div class="faq">
+				<ul id="faq-list">
+					<li class="faq-list-item">
+						<h3 class="question">雪だるまってなんですか？</h3>
+						<span>+</span>
+						<div class="answer">
+							<p>雪だるまを中心にみんなでわいわいがやがやするグループです。</p>
+						</div>
+					</li>
+					<li class="faq-list-item">
+						<h3 class="question">雪だるまはだれですか？</h3>
+						<span>+</span>
+						<div class="answer">
+							<p>雪だるまは雪国在住のアラフィフのおっさんです。</p>
+						</div>
+					</li>
+					<li class="faq-list-item">
+						<h3 class="question">だれでも雪だるまに入れますか？</h3>
+						<span>+</span>
+						<div class="answer">
+							<p>誰でも入れます。ウェルカムです！</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<din class="message-wrapper">
 		<div class="container">
 			<div class="heading">
 				<h2>さぁ、あなたも雪だるまの仲間になりませんか。</h2>
 			</div>
-			<a href="#" class="btn message">さっそく仲間になる</a>
+			<a href="#" class="btn message signup-show">さっそく仲間になる</a>
 		</div>
 	</din>
 	<footer>
@@ -87,5 +152,6 @@
 			<p>一緒にわいわいがやがやしましょう！</p>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>

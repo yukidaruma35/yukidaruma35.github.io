@@ -217,9 +217,12 @@ img {
 .member-icon p {
   position: absolute;
   text-align: center;
-  top: 250px;
+  top: 200px;
   width: 100%;
   color: red;
+  font-size: bold;
+  background-color: white;
+  border:1px solid black;
 }
 
 .txt-contents {

@@ -69,6 +69,12 @@
   }
 
   .login-modal-wrapper, .signup-modal-wrapper{
-    left: 10%;
+    left: 5%;
+  }
+
+  .modal {
+    position: absolute;
+    left: 5%;
+    width: 300px;
   }
 }
